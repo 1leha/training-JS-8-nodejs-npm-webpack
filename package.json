@@ -1,24 +1,21 @@
 {
-  "name": "training-js-6-dom",
+  "name": "training-js-8-nodejs-npm-webpack",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1leha/training-JS-6-DOM.git"
+    "url": "git+https://github.com/1leha/training-JS-8-nodejs-npm-webpack.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alexey Lisovii <alexey.lisovoy2011@.gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/1leha/training-JS-6-DOM/issues"
+    "url": "https://github.com/1leha/training-JS-8-nodejs-npm-webpack/issues"
   },
-  "homepage": "https://github.com/1leha/training-JS-6-DOM#readme"
+  "homepage": "https://github.com/1leha/training-JS-8-nodejs-npm-webpack#readme",
+  "description": ""
 }
