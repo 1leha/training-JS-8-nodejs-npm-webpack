@@ -1,0 +1,24 @@
+{
+  "name": "training-js-6-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1leha/training-JS-6-DOM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1leha/training-JS-6-DOM/issues"
+  },
+  "homepage": "https://github.com/1leha/training-JS-6-DOM#readme"
+}

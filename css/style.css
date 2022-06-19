@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  padding: 20px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  -webkit-text-decoration: 0;
+  text-decoration: 0;
+}
+
+a:hover {
+  -webkit-text-decoration: 0;
+  text-decoration: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.container {
+  position: relative;
+  margin-top: 20px;
+  height: 80%;
+  width: 100ev;
+
+  /* !удалить */
+  outline: 1px solid rgb(0, 0, 0);
+  background-color: rgb(36, 36, 36);
+}
+
+.btn {
+  position: absolute;
+  padding: 10px;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  width: 130px;
+  height: 60px;
+
+  transition-duration: 0.5s;
+}
+
+.btn--hover {
+  background-color: gold;
+}
+
+.discription {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.cards {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 1200px;
+}
+
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  perspective: 5000px;
+}
+
+.card {
+  box-sizing: border-box;
+  flex-basis: calc((100% - 80px) / 5);
+
+  background-color: #f3f3f3;
+  outline: 2px solid #e6e6e6;
+
+  padding: 10px;
+
+  border-radius: 5px;
+
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier();
+}
+
+/* .card:hover {
+  transform: scale(105%, 105%);
+} */
+
+.card:not(.card--active):hover {
+  transform: scale(105%, 105%);
+}
+
+.card--active {
+  transform: rotate3d(1, 0, 0, 30deg);
+}
+
+.card__color {
+  width: 100%;
+  height: 180px;
+  background-color: brown;
+
+  margin-bottom: 10px;
+
+  border-radius: 5px;
+}
+.wrapper4 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 94, 70);
+  height: 50px;
+  border-radius: 5px;
+  align-items: center;
+}
+
+.wrapper4__inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.card__values {
+  font-weight: 600;
+  text-align: center;
+  font-size: 12px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  transition-duration: 0.5;
+}
+
+.links-container {
+  position: fixed;
+  top: 0;
+  right: 0%;
+
+  width: 30%;
+  height: 100%;
+}
+
+.title-list {
+  padding: 10px;
+}
+
+.title-list li {
+  margin-bottom: 5px;
+}
+
+.title-link {
+  color: black;
+}
+.title-link--active {
+  color: rgb(255, 123, 46);
+}
+.active {
+  color: rgb(255, 123, 46);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 1100px) {
+  .input-container {
+    flex-direction: column;
+  }
+}
+
+.searcher-container {
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+}
+
+.searcher-container:not(:last-child) {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .searcher-container:not(:last-child) {
+    margin-bottom: 10px;
+    margin-right: 0px;
+  }
+}
+
+.inputs {
+  outline: solid black 1px;
+  flex: 1 1 70%;
+  padding: 5px;
+  /* width: 100%; */
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.counter {
+  flex: 0 0 30%;
+}
+
+.text-wrapper {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+
+  line-height: 24px;
+
+  position: relative;
+}
+
+.text,
+.text-fuse {
+  position: absolute;
+}
+
+.mark-vanilla {
+  background-color: rgb(255, 123, 46);
+}
+
+.mark-fuse {
+  background-color: rgb(159, 73, 180);
+  opacity: 0.6;
+}

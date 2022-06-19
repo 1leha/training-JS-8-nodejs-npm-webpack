@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Task 7. Search the text</title>
+  </head>
+  <body>
+    <a href="./index.html">Go Back</a>
+
+    <h1 class="title">Task 7. Search the text</h1>
+    <p class="discription">
+      "Search"-input used simple vanila JS algorithm without any search libraries. "Search
+      Fuse"-input used "Fuse.js" library
+    </p>
+
+    <!--! start -->
+    <div class="wrapper">
+      <div class="input-container">
+        <div class="searcher-container">
+          <input type="text" class="search inputs" autocomplete="none" placeholder="Search" />
+          <p class="counter-standart counter">Matches found: <span></span></p>
+        </div>
+
+        <div class="searcher-container">
+          <input
+            type="text"
+            class="search-fuse inputs"
+            autocomplete="none"
+            placeholder="Search Fuse"
+          />
+          <p class="counter-fuse counter">Matches found: <span></span></p>
+        </div>
+      </div>
+
+      <div class="text-wrapper">
+        <p class="text">
+          What is a robot? We might define it most briefly and comprehensively as “an artificial
+          object that resembles a human being.” When we think of resemblance, we think of it, first,
+          in terms of appearance. A robot looks like a human being. It could, for instance, be
+          covered with a soft material that resembles human skin. It could have hair, and eyes, and
+          a voice, and all the features and appurtenances of a human being, so that it would, as far
+          as outward appearance is concerned, be indistinguishable from a human being. This,
+          however, is not really essential. In fact, the robot, as it appears in science fiction, is
+          almost always constructed of metal, and has only a stylized resemblance to a human being.
+          Suppose, then, we forget about appearance and consider only what it can do. We think of
+          robots as capable of performing tasks more rapidly or more efficiently than human beings.
+          But in that case any machine is a robot. A sewing machine can sew faster than a human
+          being, a pneumatic drill can penetrate a hard surface faster than an unaided human being
+          can, a television set can detect and organize radio waves as we cannot, and so on. We must
+          apply the term robot, then, to a machine that is more specialized than an ordinary device.
+          A robot is a computerized machine that is capable of performing tasks of a kind that are
+          too complex for any living mind other than that of a man, and of a kind that no
+          non-computerized machine is capable of performing. In other words to put it as briefly as
+          possible: robot = machine + computer
+        </p>
+        <p class="text-fuse">
+          What is a robot? We might define it most briefly and comprehensively as “an artificial
+          object that resembles a human being.” When we think of resemblance, we think of it, first,
+          in terms of appearance. A robot looks like a human being. It could, for instance, be
+          covered with a soft material that resembles human skin. It could have hair, and eyes, and
+          a voice, and all the features and appurtenances of a human being, so that it would, as far
+          as outward appearance is concerned, be indistinguishable from a human being. This,
+          however, is not really essential. In fact, the robot, as it appears in science fiction, is
+          almost always constructed of metal, and has only a stylized resemblance to a human being.
+          Suppose, then, we forget about appearance and consider only what it can do. We think of
+          robots as capable of performing tasks more rapidly or more efficiently than human beings.
+          But in that case any machine is a robot. A sewing machine can sew faster than a human
+          being, a pneumatic drill can penetrate a hard surface faster than an unaided human being
+          can, a television set can detect and organize radio waves as we cannot, and so on. We must
+          apply the term robot, then, to a machine that is more specialized than an ordinary device.
+          A robot is a computerized machine that is capable of performing tasks of a kind that are
+          too complex for any living mind other than that of a man, and of a kind that no
+          non-computerized machine is capable of performing. In other words to put it as briefly as
+          possible: robot = machine + computer
+        </p>
+      </div>
+    </div>
+    <!--! end -->
+
+    <!-- Lodash library script file -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
+      integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Work script file -->
+    <script src="./js/module-7-events-task7.js" type="module"></script>
+  </body>
+</html>
