@@ -1,10 +1,12 @@
 {
   "name": "training-js-8-nodejs-npm-webpack",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "",
+  "private": true,
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prod": "webpack --mode=production",
+    "dev": "webpack --mode=development",
+    "start": "webpack serve"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,17 @@
     "url": "https://github.com/1leha/training-JS-8-nodejs-npm-webpack/issues"
   },
   "homepage": "https://github.com/1leha/training-JS-8-nodejs-npm-webpack#readme",
-  "description": ""
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "html-webpack-plugin": "^5.5.0",
+    "sass": "^1.53.0",
+    "sass-loader": "^13.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
+  },
+  "dependencies": {
+    "lodas": "^1.2.0"
+  }
 }
